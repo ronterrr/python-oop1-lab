@@ -4,18 +4,18 @@ class Coffee:
 
     def __init__(self, size, price):
         if not size:
-            raise ValueError("size is required")
+            print("size is required")
 
         sizes = ["Small", "Medium", "Large"]
 
         if size.capitalize() not in sizes:
-            raise ValueError("size must be Small, Medium or Large")
+            print("size must be Small, Medium or Large")
 
         if not price:
-            raise ValueError("price is required")
+            print("price is required")
 
         if not isinstance(price, int):
-            raise ValueError("price must be an integer")
+            print("price must be an integer")
 
         self.size = size
         self.price = price
