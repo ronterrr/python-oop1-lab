@@ -9,7 +9,7 @@ class Coffee:
         sizes = ["Small", "Medium", "Large"]
 
         if size.capitalize() not in sizes:
-            print("size must be Small, Medium or Large")
+            print("size must be Small, Medium, or Large")
 
         if not price:
             print("price is required")
@@ -21,5 +21,5 @@ class Coffee:
         self.price = price
 
     def tip(self):
-        print("This coffee is great, here’s a tip")
+        print("This coffee is great, here’s a tip!")
         self.price += 1

@@ -4,13 +4,13 @@ class Book:
 
     def __init__(self, title, page_count):
         if not title.strip():
-            raise ValueError("Title is mandatory")
+            print("Title is mandatory")
 
         if not isinstance(page_count, int) or isinstance(page_count, bool):
-            raise ValueError("page_count must be an integer")
+            print("page_count must be an integer")
 
         if page_count < 0:
-            raise ValueError("Please enter a valid page count")
+            print("Please enter a valid page count")
 
                 
         self.title = title
