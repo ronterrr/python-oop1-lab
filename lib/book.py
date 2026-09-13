@@ -1,6 +1,21 @@
 #!/usr/bin/env python3
 
 class Book:
-    pass
-    
+
+    def __init__(self, title, page_count):
+        if not title.strip():
+            print("Title is mandatory")
+
+        if not isinstance(page_count, int) or isinstance(page_count, bool):
+            print("page_count must be an integer")
+
+        if page_count < 0:
+            print("Please enter a valid page count")
+
+                
+        self.title = title
+        self.page_count = page_count
+
+    def turn_page(self):
+        print("Flipping the page...wow, you read fast!")
         
